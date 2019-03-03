@@ -17,17 +17,17 @@ GRBL_CONFIG = [
 ]
 
 # hardware settings
-GRBL_PORT = "/dev/ttyACM0"
+GRBL_PORT = "COM9"
 GRBL_BAUD = 115200
 
 # command options
 class Command(Enum):
-    UP = "up"
-    DOWN = "down"
-    LEFT = "left"
-    RIGHT = "right"
-    CHEESE = "cheese"
-    STOP = "stop"
+    UP = "K_UP"
+    DOWN = "K_DOWN"
+    LEFT = "K_LEFT"
+    RIGHT = "K_RIGHT"
+    CHEESE = "K_SPACE"
+    STOP = "K_ESCAPE"
 
 DEFAULT_MOVE = 100
 MAX_MOVE = 500
